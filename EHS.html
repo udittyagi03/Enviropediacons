@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enviropedia and Law Consultancy</title>
+
+    <link  rel="icon" href="logo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <!-- JavaScript with the help of Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <!-- Link CSS with All FILES -->
+    <!-- Internal CSS Included in Webpage -->
+    <style>
+        body {
+            size: 100%;
+            background-color: rgb(0, 0, 0);
+            margin: auto;
+            padding: auto;
+        }
+
+        /* Icons for Call and Mail  */
+
+        .navcontact {
+            margin: 12px;
+        }
+
+        a[href^='mailto']::before {
+            content: '📧 ';
+        }
+
+        a[href^='tel']::before {
+            content: '📞 ';
+        }
+
+
+        /* Navbar - Home, Services, Contact and other nav links styling */
+        .nav-link {
+            color: rgb(255, 255, 255);
+            margin-left: 30px;
+            font-family: dark;
+            font-size: 18px;
+            width: 110px;
+            text-align: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            font-weight: 300;
+            height: 45px;
+
+        }
+
+        .nav-link:hover {
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(255, 140, 0);
+            background-color: rgb(255, 140, 0);
+            border-radius: 4px;
+        }
+
+
+        /* Styling for search button in navbar */
+        #searchbtn {
+            border: 1px solid rgb(255, 140, 0);
+        }
+
+        #searchbtn:hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        /* cover-page are styling  */
+        .cover-page {
+            background-color: rgb(0, 0, 0);
+        }
+
+        /* Styling for text of cover  */
+        #cover {
+            color: white;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Styling of environpedia consultancy text  */
+        #company {
+            color: rgb(255, 140, 0);
+        }
+
+        /* Services styling */
+        .services {
+            background-color: rgb(230, 249, 253);
+            margin-top: -60px;
+        }
+
+        #Ourservices {
+            color: rgb(255, 140, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #Ourservicesfounder {
+            color: rgb(255, 140, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .card {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .card-body {
+            background-color: rgb(230, 249, 253);
+            border: 3px solid black;
+        }
+
+        /* Learn-more-about-ehs button hover styling */
+        #Learn-more-about-ehs {
+            border: rgb(0, 0, 0);
+        }
+
+        #Learn-more-about-ehs:hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        #view-all-services {
+            margin-top: -38px;
+            margin-bottom: 50px;
+            color: rgb(255, 140, 0);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .who-we-are {
+            background-color: rgb(21, 21, 39);
+        }
+
+        /* Styling for text of who we are  */
+        #who {
+            color: white;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Styling of who we are  */
+        #whoorangefounder {
+            color: rgb(255, 140, 0);
+
+        }
+
+        /* Our Achievements */
+        .achievements {
+            background-color: rgb(255, 236, 204);
+            margin-top: -85px;
+        }
+
+        .fs-2 {
+            color: rgb(0, 0, 0);
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: bold;
+        }
+
+        .yearsofexperience {
+            color: rgb(255, 140, 0);
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        /* Comparison */
+
+        .comparison {
+            background-color: rgb(31, 18, 18);
+        }
+
+        /* Styling for text of who we are  */
+        #compare {
+            color: white;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Styling of who we are  */
+        #whoorange {
+            color: rgb(255, 140, 0);
+        }
+
+        #compare-list {
+            margin: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: white;
+        }
+
+        #serviceform:hover {
+            cursor: pointer;
+        }
+
+        #submitform {
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            margin-top: 8px;
+        }
+
+
+        .copyright {
+            background-color: black;
+            color: white;
+        }
+
+         /* <!-- Go to Top Button Styling --> */
+         #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px solid black ;/* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 4px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+    font-size: 10px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #ffc052; /* Add a dark-grey background on hover */
+  }
+    </style>
+
+    <!-- Styling and here  -->
+
+
+</head>
+
+<body>
+
+     <!-- Go to Top Button  -->
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top"><img
+        src="https://img.icons8.com/ios-glyphs/30/long-arrow-up.png" alt=""></button>
+<script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+    <!-- Navbar  -->
+    <div class="front" style="background-color: rgb(0, 0, 0);">
+
+        <div id="background-image">
+
+            <div class="sticky-top">
+
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" style="color: rgb(0, 0, 0);" href="index.html"><img src="logo.jpg"
+                                alt="" height="90px" width="90px"></a>
+                        <button class="navbar-toggler" style="color: rgb(255, 255, 255);" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span style="background-color: rgb(255, 255, 255); color:  rgb(255, 255, 255) ;"
+                                class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <!--  Navbar - Home, Services, Contact and other nav links -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a style=" color: rgb(0, 0, 0);
+                                    font-weight: bold;
+                                    border: 1px solid rgb(255, 140, 0);
+                                    background-color: rgb(255, 140, 0);
+                                    border-radius: 4px;" class="nav-link dropdown-toggle " href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="EHS.html">EHS</a></li>
+                                        <li><a class="dropdown-item" href="ESG.html">ESG</a></li>
+                                        <li><a class="dropdown-item" href="law.html">LAW</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="services.html">View all services</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- Search button is also provide in our web -->
+                            <form class="d-flex" role="search">
+
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" style="color: rgb(255, 140, 0); " type="submit"
+                                    id="searchbtn">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Content in EHS  -->
+
+    <div class="row featurette">
+        <div class="col-md-4 order-md-1" style="color: white;">
+            <div class="sectionehslist"
+                style="border: 2px solid white; border-radius: 8px; width: 250px; margin-left: 40px; margin-top: 20px;">
+                <h2 style="color: rgb(76, 79, 253); margin-left: 20px; font-weight: 600;">Section</h2>
+                <ul style="list-style: none;">
+                    <li>※ What is EHS?</li>
+                    <li>※ Why is EHS important?</li>
+                    <li>※ Our Services in EHS</li>
+                    <li>※ Benefits of EHS</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-md-7 order-md-2" style="color: white; margin-top: 20px; margin-right: 10px;">
+            <h1 style="color: rgb(255, 140, 0); margin-left: 20px;" class="featurette-heading fw-normal lh-1">What is
+                EHS? </h1>
+            <p style="margin-top: 30px; margin-right: 10px; margin-left: 20px;" class="lead">To better understand the
+                meaning of EHS
+                management, we'll break
+                down each letter of the acronym. These are some of the areas wherein EHS processes can help to protect
+                your teams and keep them safe.</p>
+
+            <ul style="list-style: none;">
+                <li id="ehslist"> <b> ‣ Environment:</b> <br>
+                    This refers to the world around you and usually concerns
+                    accident prevention or
+                    consequence mitigation — for instance, chemical spills and air pollution.
+                </li> <br>
+                <li id="ehslist"> <b> ‣ Health:</b> <br> This typically refers to things that can make people ill, like
+                    pathogens, radiation, and
+                    exposure to excessive noise or pollution.
+                </li> <br>
+                <li id="ehslist"> <b> ‣ Safety:</b> <br> The safety aspect of EHS is focused on preventing workplace
+                    accidents and injuries.</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="row featurette" style="background-color: white; margin-top: 40px; width: auto;">
+        <div class="col-md-7 order-md-2" style="color: rgb(0, 0, 0); margin-top: 20px; margin-left: 30px;">
+            <h1 style="color: rgb(7, 12, 62); margin-left: 20px;" class="featurette-heading fw-normal lh-1">Why is EHS
+                important? </h1>
+            <p style="margin-top: 30px; margin-right: 10px; margin-left: 20px;" class="lead">Environmеnt, Hеalth, and
+                Safеty (EHS) is important for many rеasons, as it еncompassеs thе wеll-bеing of individuals,
+                communitiеs, and thе planеt as a wholе. Somе of thе kеy rеasons why EHS is crucial arе as follows: </p>
+
+            <ul style="list-style: none;">
+                <li id="ehslist"> <b> ‣ Protecting Human Lives:</b> <br>
+                    Safety regulations and procedures within the EHS framework are vital for the well-being of
+                    employees.The goal is to create an environment where employees can focus on their tasks without
+                    fearing for their safety, ensuring they return home safely each day.
+                </li> <br>
+                <li id="ehslist"> <b> ‣ Environmental Stewardship:</b> <br> EHS goes beyond the immediate workplace to
+                    consider the broader ecological impact of business operations. Businesses can minimize their
+                    negative effects on the environment through responsible management of resources, waste reduction,
+                    recycling initiatives, and pollution control.
+                </li> <br>
+                <li id="ehslist"> <b> ‣ Enhancing Reputation:</b> <br> In an increasingly conscious marketplace,
+                    adherence to EHS best practices can enhance a company’s reputation. Customers, investors, and
+                    stakeholders often view a strong commitment to environmental protection and employee well-being as
+                    signs of a responsible and trustworthy organization. This positive perception can increase customer
+                    loyalty, attract new customers, and even provide a competitive advantage in the market.</li> <br>
+                <li id="ehslist"> <b> ‣ Reducing Costs:</b> <br> Accidents, illnesses, and environmental mishaps not
+                    only have a human or ecological cost but also a financial one. In such incidents, companies may face
+                    legal fees, fines, increased insurance premiums, and the cost of cleanup or remediation.</li> <br>
+                <li id="ehslist"> <b> ‣ Driving Innovation:</b> <br> The challenges of complying with EHS regulations
+                    and reducing environmental impact often catalyze innovation. Businesses must think creatively to
+                    develop new technologies, processes, or products that meet or exceed regulatory requirements while
+                    maintaining efficiency and profitability.</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="row featurette" style="background-color: rgb(255, 221, 226);">
+        <div class="col-md-3 order-md-1" style="color: white;">
+
+
+        </div>
+        <div class="col-md-7 order-md-2" style="color: rgb(0, 0, 0); margin-top: 20px;  margin-right: 20px;">
+            <h1 style="color: rgb(255, 0, 0); margin-left: 20px;" class="featurette-heading fw-normal lh-1">Our services
+                in EHS! </h1>
+            <p style="margin-top: 30px; margin-right: 10px; margin-left: 20px;" class="lead">Enviropdeia and Law
+                Consultancy is a
+                recognized professional service organization that provides workplace safety consulting, safety training,
+                safety staffing, safety program planning and implementation.</p>
+
+            <ul style="list-style: none;">
+                <li id="ehslist"> <b> ‣ Risk assessment (Hazard identification and risk analysis):</b> <br>
+                    Hazard Identification and Risk Analysis (HIRA) is a collective term that encompasses all activities
+                    involved in identifying hazards and evaluating risk at facilities, throughout their life cycle, to
+                    make certain that risks to employees, the public, or the environment are consistently controlled
+                    within the organization’s risk tolerance. These studies typically address three main risk questions
+                    to a level of detail commensurate with analysis objectives, life cycle stage, available information,
+                    and resources. <br> <br> The three main risk question are: <br>
+                <li>⁕ Hazard – What can go wrong?</li>
+                <li>⁕ Consequences – How bad could it be?</li>
+                <li>⁕ Likelihood – How often might it happen?</li>
+                </li> <br>
+                <li id="ehslist"> <b> ‣ Environmental Aspect and impact:</b> <br>In layman’s terms, an aspect is a cause
+                    or reason and an impact is an effect or result on the environment. Because X (aspect), Y (impact)
+                    happened. Here are a couple of examples: Because of the oil spill, the soil has become contaminated.
+                    Because of the air emissions, the atmosphere has become polluted. Think in simple cause and effect
+                    statements.
+                </li> <br>
+                <li id="ehslist"> <b> ‣ PPE provider</b> </li> <br>
+                <li id="ehslist"> <b> ‣ Accident, incident & near miss reporting</b> </li> <br>
+                <li id="ehslist"> <b> ‣ First aid training and certification</b> </li> <br>
+                <li id="ehslist"> <b> ‣ Fire, safety and hydrants system</b> </li> <br>
+                <li id="ehslist"> <b> ‣ Policies , SOP'S and work instruction as per the industry norms</b> </li> <br>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="row featurette " style="background-color: rgb(61, 4, 4); ">
+        <div class="col-md-7 order-md-2 " style="color: rgb(255, 255, 255); margin-top: 20px; margin-left: 30px;">
+            <h1 style="color: rgb(255, 214, 221); margin-left: 20px;" class="featurette-heading fw-normal lh-1">Benefits
+                of EHS?</h1>
+            <p style="margin-top: 30px; margin-right: 10px; margin-left: 20px;" class="lead">EHS
+                is all about sensibly managing risks to protect your workers and your business. Good health and safety
+                management is characterised by strong leadership involving your managers, workers, suppliers,
+                contractors and customers. In a global context, health and safety is also an essential part of the
+                movement towards sustainable development. </p>
+
+            <ul style="list-style: none;">
+                <li id="ehslist"> <b> ‣ It is morally right</b>
+                    to ensure your workers return home safe and healthy at the end of every working day.
+
+                </li> <br>
+                <li id="ehslist"> ‣ By protecting your workers, you reduce absences, ensuring that your workplace is
+                    more <b>efficient and productive.</b>
+                </li> <br>
+                <li id="ehslist"> ‣ Research shows that <b> workers are more productive</b> in workplaces that are
+                    committed to health and safety.</li> <br>
+
+                <li id="ehslist"> ‣ Reducing down-time caused by illness and accidents means less disruption – and
+                    <b>saves your business money.</b>
+                </li> <br>
+
+                <li id="ehslist">‣ In some countries, health and safety legislation is criminal law and you are <b>
+                        legally obliged</b> to comply with it. Legal breaches can result in prosecution, fines and even
+                    imprisonment of senior executives. </li> <br>
+                <li id="ehslist">‣ To attract <b> investors and partnerships </b> you may need to demonstrate your commitment to
+                    sustainability and corporate social responsibility, which will include how you protect your workers.
+                </li> <br>
+                <li id="ehslist">‣ Increasingly, <b> customers</b> want to buy products and services that are produced ethically –
+                    so you also need to think about the work practices throughout your supply chain and deal only with
+                    ethical suppliers that protect their workforce.</li> <br>
+                <li id="ehslist">‣ More and more, <b>job hunters</b> – particularly Millennials and Generation Z – seek roles
+                    with employers who share their values, so without strong corporate responsibility and sustainability
+                    practices you may struggle to attract or retain the <b> best employees</b></li> <br>
+                <li id="ehslist">‣ A good health and safety record is a source of <b> competitive advantage: </b> it builds trust
+                    in your reputation and brand, while poor health and safety performance will directly affect
+                    profitability and can result in loss of trade or even closure of the business.</li> <br>
+                <li id="ehslist">‣ Good health and safety at work secures <b> long-term benefits </b> for you, your business and
+                    the wider community.</li> <br>
+
+
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!-- Footer  -->
+    <div class="footer">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="row-1 col-md-2 mb-4">
+                        <h5>Quick Links</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="services.html"
+                                    class="nav-link p-0 text-muted">Services</a></li>
+                            <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="Learnmore.html" class="nav-link p-0 text-muted">About
+                                    Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Send Us a message  -->
+                    <div class="row-2 col-md-2 mb-4">
+                        <h6>Send Us a Message!</h6>
+                        <form>
+                            <label for="fname">First name:</label><br>
+                            <input type="name" id="fname" name="fname" placeholder="ex :  john">
+                            <label for="lname">Last name:</label><br>
+                            <input type="name" id="lname" name="lname" placeholder="ex :  doe">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="ex : johndoe1@gmail.com">
+                            <label style="margin-top: 10px;" for="Services">Selects Service</label>
+                            <select name="Services" id="serviceform">
+                                <option value="EHS">EHS</option>
+                                <option value="ESG">ESG</option>
+                            </select>
+                            <button id="submitform">Submit</button>
+                        </form>
+                    </div>
+                    <div class="row-2 col-md-2 mb-4">
+
+                    </div>
+                    <div class="row-2 col-md-3 mb-4">
+
+                        <div class="contact-info">
+                            <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+                            <div class="cinfo">
+                                <h5>Where to Find Us</h5>
+                                <p> Andrew's Ganj, <br> South Extension,<br> 110049, <br> Delhi, India</p>
+                            </div>
+                            <div class="cinfo">
+                                <h5>Email Us At</h5>
+                                <a style="color: rgb(0, 0, 0); text-decoration: none; "
+                                    href="mailto: Tyagishruti9@gamil.com">Tyagishruti9@gamil.com</a>
+                            </div>
+                            <br>
+                            <div class="cinfo">
+                                <h5>Call Us At</h5>
+                                <a style="color: rgb(0, 0, 0); text-decoration: none;" href="tel:+91 8395859674">+91
+                                    8395859674</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-2 col-md-3 mb-4">
+                        <p style="margin-top: 10px;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17859.47198125173!2d77.21263157158569!3d28.56502762475733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce24f9b5e7a09%3A0xca0dba44f3331aa!2sAndrews%20Ganj%2C%20New%20Delhi%2C%20Delhi%20110049!5e0!3m2!1sen!2sin!4v1691475989048!5m2!1sen!2sin"
+                                width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <footer class="copyright">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2023 Environpedia and Law Consultancy, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
